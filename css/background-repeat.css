@@ -1,0 +1,20 @@
+.bgr-demo{
+	width: 400px;
+	height: 200px;
+	padding: 50px;
+	margin: 50px;
+	border: 5px dashed #8A2BE2;
+	background: url(../img/bg.png) no-repeat;
+}
+#bgrdemo1{
+	background-repeat: repeat-x;
+}
+#bgrdemo2{
+	background-repeat: repeat-y;
+}
+#bgrdemo3{
+	background-repeat: space;
+}
+#bgrdemo4{
+	background-repeat: round;
+}

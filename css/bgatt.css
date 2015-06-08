@@ -1,0 +1,21 @@
+.bg-att{
+	width: 150px;
+	height: 150px;
+	border: 5px solid green;
+	padding: 50px;
+	margin: 50px;
+	overflow: scroll;
+	background: url(../img/bg.png) no-repeat;
+}
+#bgatt1{
+	background-attachment: local;
+}
+#bgatt2{
+	background-attachment: scroll;
+}
+#bgatt3{
+	background-attachment: fixed;
+}
+#bgatt4{
+	background: linear-gradient(45deg,blue,red);
+}

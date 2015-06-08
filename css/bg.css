@@ -1,0 +1,30 @@
+.bg-demo{
+	width: 400px;
+	height: 200px;
+	border: solid 5px blueviolet;
+	padding: 50px;
+	margin: 50px;
+		background: url(../img/bg.png) no-repeat;
+}
+#demo1{
+
+	background-position: 10px 20px;
+}
+#demo2{
+	background-position: 10px;
+}
+#demo3{
+	background-position: center 10px;
+}
+#demo4{
+	background-position: center center;
+}
+#demo5{
+	background-position: 50% 50%;
+}
+#demo6{
+	background-position: 50% 20%;
+}
+#demo7{
+	background-position: center;
+}

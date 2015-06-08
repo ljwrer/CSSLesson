@@ -1,0 +1,36 @@
+div {
+	font-size: 18px;
+	font-family: arial, verdana, serif, sans-serif;
+	font-style: oblique;
+}
+div p {
+	background-color: green;
+	font-size: 2em;
+	font-family: verdana, "microsoft yahei";
+	font-weight: bold;
+	font-style: italic;
+	line-height: 100px;
+}
+#cssIntro {
+	background-color: green;
+	line-height: 3em;
+}
+#cssIntro1 {
+	font: bold italic 18px/2 "Consolas", monospace;
+	color: rgba(50, 170, 60, 0.5);
+	text-align: justify;
+	text-indent: 2em;
+	text-shadow: 5px 5px 5px #f00;
+	text-decoration: underline;
+}
+#cssIntro1-1{
+	font-size: 12px;
+	vertical-align: 50%;
+}
+#over{
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	
+}

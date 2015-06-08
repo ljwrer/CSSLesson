@@ -1,0 +1,19 @@
+#w1{
+	background-color: green;
+	width: 200px;
+	height: auto;
+}
+#w2{
+	background-color: yellow;
+	width: 50%;
+	border: 1px dashed green;margin: 20px;
+}
+#s1{
+	background-color: blue;
+	width: 200px;
+	padding: 0px 30px 20px 10px;
+}
+#w3{
+	background-color: pink;
+	margin: 20px;
+}

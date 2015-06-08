@@ -1,0 +1,29 @@
+.linear-gradient{
+	width: 400px;
+	height: 200px;
+	margin: 20px;
+}
+#lg-demo1{
+	background: linear-gradient(45deg,blue,green,yellow),linear-gradient(-90deg,red,gray,pink);	
+}
+#lg-demo2{
+	background:linear-gradient(45deg,red,gray,pink);
+}
+#lg-demo3{
+	background: linear-gradient(to bottom,green ,blue 20px,green 10px);
+}
+#lg-demo4{
+	background: linear-gradient(red,green 20%,blue);
+}
+#lg-demo5{
+	background: repeating-linear-gradient(red 10%,green 20%,blue 30%);
+}
+#lg-demo6{
+	background: radial-gradient(red,blue 20px,red 100px);
+}
+#lg-demo7{
+	background: repeating-radial-gradient(red,blue 20px,red 30px);
+}
+#lg-demo8{
+	background: radial-gradient(red,green,blue,yellow,pink);
+}

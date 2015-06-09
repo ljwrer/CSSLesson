@@ -1,29 +1,61 @@
-.linear-gradient{
+.linear-gradient {
 	width: 400px;
 	height: 200px;
 	margin: 20px;
 }
-#lg-demo1{
-	background: linear-gradient(45deg,blue,green,yellow),linear-gradient(-90deg,red,gray,pink);	
+#lg-demo1 {
+	background: linear-gradient(45deg, blue, green, yellow), linear-gradient(-90deg, red, gray, pink);
 }
-#lg-demo2{
-	background:linear-gradient(45deg,red,gray,pink);
+#lg-demo2 {
+	background: linear-gradient(45deg, red, gray, pink);
 }
-#lg-demo3{
-	background: linear-gradient(to bottom,green ,blue 20px,green 10px);
+#lg-demo3 {
+	background: linear-gradient(to bottom, green, blue 20px, green 10px);
 }
-#lg-demo4{
-	background: linear-gradient(red,green 20%,blue);
+#lg-demo4 {
+	background: linear-gradient(red, green 20%, blue);
 }
-#lg-demo5{
-	background: repeating-linear-gradient(red 10%,green 20%,blue 30%);
+#lg-demo5 {
+	background: repeating-linear-gradient(red 10%, green 20%, blue 30%);
 }
-#lg-demo6{
-	background: radial-gradient(red,blue 20px,red 100px);
+#lg-demo6 {
+	background: radial-gradient(red 0px, blue 20px, red 100px);
 }
-#lg-demo7{
-	background: repeating-radial-gradient(red,blue 20px,red 30px);
+#lg-demo7 {
+	background: repeating-radial-gradient(red, blue 20px, red 30px);
 }
-#lg-demo8{
-	background: radial-gradient(red,green,blue,yellow,pink);
+#lg-demo8 {
+	background: radial-gradient(red, green, blue, yellow, pink);
+}
+.radial-gradient {
+	width: 400px;
+	height: 200px;
+	margin: 20px;
+}
+#rg-demo1 {
+	background: radial-gradient(red, blue);
+}
+#rg-demo2 {
+	background: radial-gradient(circle, red, blue);
+}
+#rg-demo3{
+	background: radial-gradient(circle 100px,red,blue);
+}
+#rg-demo4{
+	background: radial-gradient(ellipse 200px 100px,red,blue);
+}
+#rg-demo5{
+	background: radial-gradient(ellipse 100px 50px,red,blue);
+}
+#rg-demo6{
+	background: radial-gradient(ellipse 100px 50px at top left,red,blue);
+}
+#rg-demo7{
+	background: radial-gradient(red ,green 50px,blue);
+}
+#rg-demo8{
+	background: radial-gradient(farthest-corner,red,blue);
+}
+#rg-demo9{
+	background: radial-gradient(farthest-side,red,blue);
 }

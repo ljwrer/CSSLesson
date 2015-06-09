@@ -1,0 +1,45 @@
+#display-block{
+	background-color: pink;
+}
+#display-inline{
+	background-color: pink;
+}
+#display-inline-block{
+	display: inline-block;
+	background: pink;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	vertical-align: middle;	
+}
+.display-visibility{
+	border: 1px solid green;
+	margin-top: 5px;
+}
+#display-none{
+	display: none;
+}
+#visibility-hidden{
+	visibility: hidden;
+}
+#horizeontal-center{
+	font: 20px/200px "微软雅黑";
+	text-align: center;
+	width: 980px;
+	height: 200px;
+	margin: 0 auto;
+	background: linear-gradient(45deg,blue,green,yellow);
+}
+#center-navigation{
+	margin: 0 auto;
+	width: 980px;
+}
+#center-navigation li{
+	width: 200px;
+	height: 100px;
+	list-style: none;
+	display: inline-block;
+}
+#center-navigation li a{
+	
+}

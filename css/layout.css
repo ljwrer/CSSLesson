@@ -34,12 +34,27 @@
 	margin: 0 auto;
 	width: 980px;
 }
-#center-navigation li{
-	width: 200px;
-	height: 100px;
-	list-style: none;
-	display: inline-block;
-}
-#center-navigation li a{
+#center-navigation ul{
+	text-align: center;
+	height: 30px;
+	background: red;
+	font: 12px/30px "微软雅黑";
 	
 }
+#center-navigation li,a{
+	width: 100px;
+	height: 100%;
+	display: inline-block;
+}
+#center-navigation li{
+	margin: 0 5px;	
+	list-style: none;
+}
+#center-navigation a,a:hover{
+		text-decoration: none;
+		color: #fff;
+}
+#center-navigation a:hover{
+	background: #C00;
+}
+

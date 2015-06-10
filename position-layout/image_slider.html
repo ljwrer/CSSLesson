@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.slider-image{
+			position: relative;
+			width: 896px;
+		}
+		.slider-image img{
+			display: block;
+		}
+		.slider-image .title{
+			
+			line-height: 50px;
+			background-color: black;
+			opacity: 0.6;
+			position: absolute;
+			bottom: 16px;
+			
+			left: 14px;
+			right: 14px;
+		}
+		.slider-image .title a,a:hover{
+			color: white;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.slider-image .control{
+			position: absolute;			
+			bottom: 32px;
+			right: 25px;
+			line-height: 10px;
+		} 
+
+		.slider-image .control span{
+			display: inline-block;
+			height: 10px;
+			width: 10px;
+			background: white;
+			border-radius: 5px;
+			margin: auto 2px;
+		}
+		.slider-image .control .cur{
+			background: gray;
+		}
+	</style>
+	<body>
+		<div class="slider-image">
+			<img src="../img/viewOfBack.jpg" />
+			<p class="title"><a href="#">Eiyuu Densetsu Zero no Kiseki</a></p>
+			<div class="control">
+				<span></span>
+				<span class="cur"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		
+	</body>
+</html>

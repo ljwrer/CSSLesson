@@ -1,0 +1,38 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+html,
+body {
+	height: 100%;
+}
+.parent {
+	font: 20px "microsoft yahei";
+	color: white;
+	text-align: center;
+	height: 100%;
+	position: relative;
+}
+.side:before,
+.main:before {
+	content: '.';
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 100%;
+	overflow: hidden;
+	visibility: hidden;
+}
+.side {
+	height: 100%;
+	width: 200px;
+	background: red;
+}
+.main {
+	position: absolute;
+	background: blueviolet;
+	left: 210px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}

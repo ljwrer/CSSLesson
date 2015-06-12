@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			html,body{
+				height: 100%;
+			}
+			body{
+				display: flex;
+				flex-flow: column;
+				text-align: center;
+				color: white;
+			}
+			#head,#foot{
+				flex-basis: 100px;
+				background: black;
+				line-height: 100px;
+			}
+			#body{
+				flex-grow: 1;	
+				display: flex;
+				color: black;
+				width: 980px;
+				align-self: center;
+			}
+			#side{
+				flex-basis: 200px;
+				background: yellow;
+			}
+			#main{
+				margin-left: 50px;
+				flex-grow: 1;
+				background: pink;
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		
+	</body>
+		<div id="head">head</div>
+		<div id="body">
+			<div id="side">side</div>			
+			<div id="main">main</div>
+		</div>
+		<div id="foot">foot</div>
+</html>

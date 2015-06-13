@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			body {
+				height: 3000px;
+			}
+			.popup {
+				position: fixed;
+				width: 300px;
+				border: solid 1px #cccccc;
+				border-radius: 5px;
+				margin: 0 auto;
+			}
+			.title {
+				font: 14px/40px "microsoft yahei";
+				background: #eeeeee;
+				padding: 0px 20px;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			.title img {
+				position: absolute;
+				right: 10px;
+				top: 10px;
+			}
+			.content {
+				padding: 20px;
+			}
+			.popup button {
+				background: blue;
+				width: 80px;
+				height: 30px;
+				border-radius: 5px;
+				color: #fff;
+				border: none;				
+				margin: 0 110px 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="popup">
+			<div class="title">标题栏标题栏标题栏标题栏标题栏标题栏标题栏
+				<img src="../img/X1.png" />
+			</div>
+			<div class="content">内容区段落内容区段落内容区段落内容区段落内容区段落内容区段落内容区段落</div>
+			<button name="confirm">确定</button>
+		</div>
+	</body>
+
+</html>

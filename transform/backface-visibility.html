@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8">
 		<title></title>
 		<style type="text/css">
-			.backface-visibility{
-				perspective: 2000px;
-				-webkit-perspective: 2000px;
+			.backface-visibility {
+				perspective: 1000px;
+				-webkit-perspective: 1000px;
+			}
+			#backface-visibility-demo1>div {
+				position: relative;
+				margin: 50px auto;
 				width: 200px;
 				height: 200px;
-				line-height: 200px;
-				background-color: rgba(46,139,87,0.5);
+				font: 50px/200px arial;
 				text-align: center;
-				font-size: 50px;
-				margin: 50px auto;
-			}
-			#backface-visibility-demo1>div{
-				width: 200px;
-				height: 200px;
-				background-color: rgba(46,139,87,0.5);
-				text-align: center;
-				font-size: 50px;
-				margin: 50px auto;
-			}
-			#backface-visibility-demo1>div>pre{
+				background: rgba(119, 147, 36, 0.1);
 				transform: rotateY(45deg);
 				-webkit-transform: rotateY(45deg);
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+				/*backface-visibility: hidden;*/
+			}
+			#backface-visibility-demo1>div:hover{
+				transform: rotateY(145deg);
+				-webkit-transform: rotateY(145deg);
+			}
+			#backface-visibility-demo1>div>pre {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				background: rgba(119, 147, 36, 0.5);
+				backface-visibility: hidden;
+			}
+			#backface-visibility-demo1>div pre:first-child{
+				transform: rotateY(180deg) translateZ(1px);
+				-webkit-transform:rotateY(180deg) translateZ(1px);
+			}
+			#backface-visibility-demo1>div pre:last-child{
+				
+			}
+			html,
+			body,
+			pre {
+				margin: 0;
+				padding: 0;
+				border: 0;
 			}
 		</style>
 	</head>
+
 	<body>
 		<div id="backface-visibility-demo1" class="backface-visibility">
 			<div>
+				<pre>C</pre>
 				<pre>E</pre>
 			</div>
 		</div>
-		<div id="backface-visibility-demo2" class="backface-visibility">
+		<!--<div id="backface-visibility-demo2" class="backface-visibility">
 			<div>
 				<pre>C</pre>
 				<pre>E</pre>
@@ -58,6 +83,7 @@
 				<pre>C</pre>
 				<pre>E</pre>
 			</div>
-		</div>
+		</div>-->
 	</body>
+
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.backface-visibility{
+				perspective: 2000px;
+				-webkit-perspective: 2000px;
+				width: 200px;
+				height: 200px;
+				line-height: 200px;
+				background-color: rgba(46,139,87,0.5);
+				text-align: center;
+				font-size: 50px;
+				margin: 50px auto;
+			}
+			#backface-visibility-demo1>div{
+				width: 200px;
+				height: 200px;
+				background-color: rgba(46,139,87,0.5);
+				text-align: center;
+				font-size: 50px;
+				margin: 50px auto;
+			}
+			#backface-visibility-demo1>div>pre{
+				transform: rotateY(45deg);
+				-webkit-transform: rotateY(45deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="backface-visibility-demo1" class="backface-visibility">
+			<div>
+				<pre>E</pre>
+			</div>
+		</div>
+		<div id="backface-visibility-demo2" class="backface-visibility">
+			<div>
+				<pre>C</pre>
+				<pre>E</pre>
+			</div>
+		</div>
+		<div id="backface-visibility-demo3" class="backface-visibility">
+			<div>
+				<pre>C</pre>
+				<pre>E</pre>
+			</div>
+		</div>
+		<div id="backface-visibility-demo4" class="backface-visibility">
+			<div>
+				<pre>C</pre>
+				<pre>E</pre>
+			</div>
+		</div>
+		<div id="backface-visibility-demo5" class="backface-visibility">
+			<div>
+				<pre>C</pre>
+				<pre>E</pre>
+			</div>
+		</div>
+	</body>
+</html>

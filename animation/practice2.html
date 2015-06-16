@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+			body{
+				-webkit-transform-style: preserve-3d;
+				-webkit-perspective: 1000px;
+			}
+			.container{
+				position: relative;
+				margin: 100px auto;
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				-webkit-transform-style: preserve-3d;
+				-webkit-perspective: 1000px;
+			}
+			.face{
+				border: solid 1px black;
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				font: 40px/200px arial;
+			}
+			.face1{
+					-webkit-animation:top 2s forwards;
+			}
+			.face2{
+				-webkit-animation: bottom 2s 2s forwards;
+			}
+			.face3{
+				-webkit-animation: left 2s 4s forwards;
+			}
+			.face4{
+				-webkit-animation: right 2s 6s forwards;
+			}
+			.face6{
+				-webkit-animation: back 2s 8s forwards;
+			}
+			.face5{
+				-webkit-animation: font 2s 10s forwards;
+			}
+			.container{
+				-webkit-animation: rotate 2s 12s forwards infinite;
+			}
+			.container:hover .face1{background:rgba(255,255,0,0.8);}
+			.container:hover .face2{background:rgba(0,255,0,0.8);}
+			.container:hover .face3{background:rgba(0,255,255,0.8);}
+			.container:hover .face4{background:rgba(0,0,255,0.8);}
+			.container:hover .face5{background:rgba(255,0,255,0.8);}
+			.container:hover .face6{background:rgba(255,0,0,0.8);}
+			@-webkit-keyframes rotate{
+				to{
+					-webkit-transform: rotate3d(1,1,1,360deg);
+				}
+			}
+			@-webkit-keyframes top{
+				from{}
+				to{
+					-webkit-transform: rotateX(90deg) translateZ(100px);
+					
+				}
+			}
+			@-webkit-keyframes bottom{
+				from{}
+				to{
+					-webkit-transform: rotateX(-90deg)  translateZ(100px);;
+					}
+			}
+			@-webkit-keyframes left{
+				from{}
+				to{
+					-webkit-transform: rotateY(-90deg) translateZ(100px);
+					}
+			}
+			@-webkit-keyframes right{
+				from{}
+				to{
+					-webkit-transform: rotateY(90deg) translateZ(100px);
+					}
+			}
+			
+			@-webkit-keyframes back{
+				to{
+					-webkit-transform: rotateY(180deg) translateZ(100px);
+				}
+			}
+			@-webkit-keyframes font{
+				to{
+					-webkit-transform: translateZ(100px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="face face1">top</div>
+			<div class="face face2">bottom</div>
+			<div class="face face3">left</div>
+			<div class="face face4">right</div>
+			<div class="face face5">font</div>
+			<div class="face face6">back</div>
+		</div>
+	</body>
+</html>

@@ -12,12 +12,11 @@
 			.container{
 				position: relative;
 				margin: 100px auto;
-				background: pink;
 				width: 200px;
 				height: 200px;
 				text-align: center;
 				-webkit-transform-style: preserve-3d;
-				-webkit-perspective: 2000px;
+				-webkit-perspective: 1500px;
 			}
 			.face{
 				border: solid 1px black;
@@ -29,13 +28,44 @@
 				font: 20px/200px arial;
 			}
 			.face1{
-					-webkit-animation:rotateX 2s;
+					-webkit-animation:rotateXtop 2s forwards;
 			}
-			@-webkit-keyframes rotateX{
+			.face2{
+				-webkit-animation: rotateXbottom 2s 2s forwards;
+			}
+			.face3{
+				-webkit-animation: rotateYleft 2s 4s forwards;
+			}
+			.face4{
+				-webkit-animation: rotateYright 2s 6s forwards;
+			}
+			@-webkit-keyframes rotateXtop{
 				from{}
 				to{
-					-webkit-transform: rotate3d(1,1,1,90deg);
+					-webkit-transform: rotateX(90deg);
+					-webkit-transform-origin: top;
 				}
+			}
+			@-webkit-keyframes rotateXbottom{
+				from{}
+				to{
+					-webkit-transform: rotateX(-90deg);
+					-webkit-transform-origin: bottom;
+					}
+			}
+			@-webkit-keyframes rotateYleft{
+				from{}
+				to{
+					-webkit-transform: rotateY(-90deg);
+					-webkit-transform-origin: left;
+					}
+			}
+			@-webkit-keyframes rotateYright{
+				from{}
+				to{
+					-webkit-transform: rotateY(90deg);
+					-webkit-transform-origin: right;
+					}
 			}
 		</style>
 	</head>

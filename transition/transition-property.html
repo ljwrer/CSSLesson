@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			.transition-property{
+				border: dashed 1px black;
+				position: relative;
+				height: 50px;
+				width: 500px;
+				background-color:coral;
+				margin: 20px auto;
+			}
+			.transition-property pre{
+				position: absolute;
+				left: 0;
+				top:0;
+				font: 12px/50px arial;
+				width: 50px;
+				height: 50px;
+				border-radius: 100%;
+				background-color: green;
+				text-align: center;	
+				transition-duration: 5s;			
+			}
+			.transition-property:hover pre{
+				color: white;
+				left: 450px;
+			}
+			#transition-property1{
+				transition-property: none;
+			}
+			#transition-property2 pre{
+				transition-property: all;
+			}
+			#transition-property3{
+				transition-property: left;
+			}
+			#transition-property4{
+				transition: left,color;
+			}
+		</style>
+	</head>
+	
+	
+	<body>
+		<div class="transition-property" id="transition-property1"><pre>none</pre></div>
+		<div class="transition-property" id="transition-property2"><pre>all</pre></div>
+		<div class="transition-property" id="transition-property3"><pre>left</pre></div>
+		<div class="transition-property" id="transition-property4"><pre>left-color</pre></div>
+	</body>
+</html>

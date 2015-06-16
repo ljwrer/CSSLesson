@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			#transition-timing-function{
+				border: dashed 1px black;
+				position: relative;
+				height: 500px;
+				width: 500px;
+				background-color:coral;
+				margin: 20px auto;
+			}
+			#transition-timing-function pre{
+				position: absolute;
+				left: 0;
+				font: 12px/50px arial;
+				width: 50px;
+				height: 50px;
+				border-radius: 100%;
+				background-color: green;
+				text-align: center;	
+							
+			}
+			#transition-timing-function:hover pre{
+				color: white;
+				left: 450px;
+				transition-duration: 5s;
+			}
+			#transition-timing-function pre:nth-child(1){
+				top: 50px;
+				transition-timing-function: ease;
+			}
+			#transition-timing-function pre:nth-child(2){
+				top: 150px;
+				transition-timing-function: linear;				
+			}
+			#transition-timing-function pre:nth-child(3){
+				top: 250px;
+				transition-timing-function: ease-out;				
+			}
+			#transition-timing-function pre:nth-child(4){
+				top: 350px;
+				transition-timing-function: cubic-bezier(0.8,0,0,0.8);
+				font: 6px/25px arial;
+			}
+			#transition-timing-function pre:nth-child(5){
+				top: 450px;
+				transition-timing-function:steps(5,start) ;
+				font: 6px/25px arial;
+			}
+		</style>
+	</head>
+		<div id="transition-timing-function">
+			<pre>ease</pre>
+			<pre>linear</pre>
+			<pre>ease-out</pre>
+			<pre>cubic-bezier<br>(0.8,0,0,0.8)</pre>
+			<pre>steps<br>(3,start)</pre>
+		</div>
+	
+	<body>
+		
+	</body>
+</html>

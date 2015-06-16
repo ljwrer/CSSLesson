@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			#transition-duration{
+				border: dashed 1px black;
+				position: relative;
+				height: 500px;
+				width: 500px;
+				background-color:coral;
+				margin: 20px auto;
+			}
+			#transition-duration pre{
+				position: absolute;
+				left: 0;
+				font: 12px/50px arial;
+				width: 50px;
+				height: 50px;
+				border-radius: 100%;
+				background-color: green;
+				text-align: center;	
+							
+			}
+			#transition-duration:hover pre{
+				color: white;
+				left: 450px;
+			}
+			#transition-duration pre:nth-child(1){
+				top: 50px;
+				transition-duration: 0s;
+			}
+			#transition-duration pre:nth-child(2){
+				top: 150px;
+				transition-duration: 2s;
+			}
+			#transition-duration pre:nth-child(3){
+				top: 250px;
+				transition-duration: 4s;
+			}
+			#transition-duration pre:nth-child(4){
+				top: 350px;
+				transition-duration: 8s;
+			}
+		</style>
+	</head>
+		<div id="transition-duration">
+			<pre>0s</pre>
+			<pre>2s</pre>
+			<pre>4s</pre>
+			<pre>8s</pre>
+		</div>
+	
+	<body>
+		
+	</body>
+</html>

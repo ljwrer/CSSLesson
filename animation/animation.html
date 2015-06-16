@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+			.animation{
+				position: relative;
+				width: 500px;
+				height: 200px;
+				text-align: center;
+				background-color: yellowgreen;
+				margin: 20px auto;
+			}
+			.animation pre{
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				left: 0;
+				top:100px;
+				font: 24px/100px arial;
+				background-color: cornflowerblue;
+				border-radius: 50%;
+			}
+			.animation1 pre{
+				-webkit-animation:abc 2s;  
+			}
+			.animation2 pre{
+				-webkit-animation: abc 2s both;
+				font: 12px/50px arial;
+			}
+			.animation3 pre{
+				-webkit-animation: abc 2s both infinite alternate;
+				font: 8px/33px arial;
+			}
+			.animation4 pre{
+				
+				-webkit-animation: abc 5s ease-out 2000ms 1 both;
+			}
+			@-webkit-keyframes abc{
+				0%{
+					left: 0;
+					top:0;
+				}
+				50%{
+					left: 200px;
+					top: 100px;
+				}
+				100%{
+					left: 400px;
+					top: 0;
+				}
+			}
+			@-webkit-keyframes abcd{
+				from{
+					color: black;
+				}
+				to{
+					color: white;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="animation animation1">
+			<pre>abc 2s</pre>
+		</div>
+		<div class="animation animation2">
+			<pre>abc 2s<br>both</pre>
+		</div>
+		<div class="animation animation3">
+			<pre>abc 2s both<br>infinite<br>alternate<br></pre>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+			.animation{
+				position: relative;
+				width: 500px;
+				height: 200px;
+				text-align: center;
+				background-color: yellowgreen;
+				margin: 20px auto;
+			}
+			.animation pre{
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				left: 0;
+				top:100px;
+				font: 24px/100px arial;
+				background-color: cornflowerblue;
+				border-radius: 50%;
+			}
+			.animation1 pre{
+				-webkit-animation:abc 5s ease 2000ms 1 ;  
+			}
+			.animation2 pre{
+				-webkit-animation: abc 5s linear 2000ms 1 forwards;
+			}
+			.animation3 pre{
+				-webkit-animation: abc 5s ease-in-out 2000ms 1 backwards;
+			}
+			.animation4 pre{
+				font-size: 12px;
+				-webkit-animation: abc 5s ease-out 2000ms 1 both;
+			}
+			@-webkit-keyframes abc{
+				0%{
+					left: 0;
+					top:0;
+				}
+				50%{
+					left: 200px;
+					top: 100px;
+				}
+				100%{
+					left: 400px;
+					top: 0;
+				}
+			}
+			@-webkit-keyframes abcd{
+				from{
+					color: black;
+				}
+				to{
+					color: white;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="animation animation1">
+			<pre>none</pre>
+		</div>
+		<div class="animation animation2">
+			<pre>forwards</pre>
+		</div>
+		<div class="animation animation3">
+			<pre>backwards</pre>
+		</div>
+		<div class="animation animation4">
+			<pre>both</pre>
+		</div>
+	</body>
+</html>

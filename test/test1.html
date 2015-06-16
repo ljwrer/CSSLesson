@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+			.parent {
+				font: 20px/200px "microsoft yahei";
+				color: white;
+				text-align: center;
+				width: 810px;
+				height: 200px;
+				margin: 0 auto;
+			}
+			
+			.parent:after {
+				content: ".";
+				display: block;
+				clear: both;
+				overflow: hidden;
+				height: 0;
+				visibility: hidden;
+			}
+			.side {
+				float: left;
+				height: 100%;
+				width: 200px;
+				background: #FF0000
+			}
+			.main {
+				float: right;
+				height: 100%;
+				width: 600px;
+				margin-left: 10px;
+				background: #0000FF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="parent">
+			<div class="side">侧栏</div>
+			<div class="main">主栏</div>
+		</div>
+	</body>
+
+</html>

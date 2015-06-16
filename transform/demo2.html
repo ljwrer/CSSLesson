@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			.m-demo{
+				perspective: 2000px;
+				position: relative;
+				width: 200px;
+				height: 200px;
+				font: 50px/200px arial;
+				margin: 200px auto;
+				background-color: rgba(105,139,105,0.5);
+				text-align: center;
+			}
+			.m-demo pre{
+				position: absolute;
+				top: 0;left: 0;right: 0;bottom: 0;
+				background-color: rgba(30,144,255,0.7);
+			}
+			.m-demo>div{
+				transform-style: preserve-3d;
+				position: absolute;
+				top: 0;left: 0;right: 0;bottom: 0;
+			}
+			.m-demo-1 > div {
+				transform: rotateY(45deg);
+			}
+			.m-demo-2>div>pre:first-child{
+				transform: rotateY(150deg);
+			}
+			.m-demo-2>div>pre:last-child{
+				transform: rotateY(45deg);
+			}
+			.m-demo-2>div>pre{
+				backface-visibility: hidden;
+			}
+			.m-demo-2 > div {
+				transform: rotateY(135deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="m-demo m-demo-1">
+			<div>
+				<pre>E</pre>
+			</div>
+		</div>
+		<div class="m-demo m-demo-2">
+			<div>
+				<pre>C</pre>
+				<pre>E</pre>
+			</div>
+		</div>
+		<div class="m-demo m-demo-3">
+			<div>
+				<pre>C</pre>
+				<pre>E</pre>
+			</div>
+		</div>
+		<div class="m-demo m-demo-2 m-demo-backface">
+			<div>
+				<pre>C</pre>
+				<pre>E</pre>
+			</div>
+		</div>
+		<div class="m-demo m-demo-3 m-demo-backface">
+			<div>
+				<pre>C</pre>
+				<pre>E</pre>
+			</div>
+		</div>
+	</body>
+</html>

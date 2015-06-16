@@ -3,7 +3,50 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+			.container{
+				position: relative;
+				margin: 100px auto;
+				background: pink;
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				-webkit-transform-style: preserve-3d;
+				-webkit-perspective: 2000px;
+			}
+			.face{
+				border: solid 1px black;
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				font: 20px/200px arial;
+			}
+			.face1{
+					-webkit-animation:rotateX 2s;
+			}
+			@-webkit-keyframes rotateX{
+				from{}
+				to{
+					-webkit-transform: rotate3d(1,1,1,90deg);
+				}
+			}
+		</style>
 	</head>
 	<body>
+		<div class="container">
+			<div class="face face1">top</div>
+			<div class="face face2">bottom</div>
+			<div class="face face3">left</div>
+			<div class="face face4">right</div>
+			<div class="face face5">font</div>
+			<div class="face face6">back</div>
+		</div>
 	</body>
 </html>
